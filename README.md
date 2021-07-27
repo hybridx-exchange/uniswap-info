@@ -23,8 +23,10 @@ yarn start
 1. run a oasis ethereum runtime gateway with code: https://github.com/dltswap/oasis-ssvm-runtime
 2. build a graph node or docker image with code: https://github.com/dltswap/graph-node, and run postgreq, ipfs, graph-node
    with instruction. It is recommended to use docker-compose to start.
-3. Run a web server, such as nginx, then expose the graph service through the web server, and bind the domain name
-4. Modify the service path in src/apollo/client.js and run this app.
+3. deploy the eth-block subgraph with code: https://github.com/dltswap/ethereum-blocks
+4. deploy the uniswap-subgraph with code: https://github.com/dltswap/uniswap-subgraph
+5. Run a web server, such as nginx, then expose the graph service through the web server, and bind the domain name
+6. Modify the service path in src/apollo/client.js and run this app.
 ```
 
 ###### deploy in heroku
