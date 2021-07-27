@@ -166,7 +166,7 @@ function AccountPage({ account }) {
         <RowBetween>
           <TYPE.body>
             <BasicLink to="/accounts">{'Accounts '}</BasicLink>→{' '}
-            <Link lineHeight={'145.23%'} href={'https://etherscan.io/address/' + account} target="_blank">
+            <Link lineHeight={'145.23%'} href={'http://scan.oasiseth.org/account/' + account} target="_blank">
               {' '}
               {account?.slice(0, 42)}{' '}
             </Link>
@@ -177,7 +177,7 @@ function AccountPage({ account }) {
           <RowBetween>
             <span>
               <TYPE.header fontSize={24}>{account?.slice(0, 6) + '...' + account?.slice(38, 42)}</TYPE.header>
-              <Link lineHeight={'145.23%'} href={'https://etherscan.io/address/' + account} target="_blank">
+              <Link lineHeight={'145.23%'} href={'http://scan.oasiseth.org/account/' + account} target="_blank">
                 <TYPE.main fontSize={14}>View on Etherscan</TYPE.main>
               </Link>
             </span>
@@ -217,11 +217,11 @@ function AccountPage({ account }) {
                 <Flyout>
                   <AutoColumn gap="0px">
                     {positions?.map((p, i) => {
-                      if (p.pair.token1.symbol === 'WETH') {
-                        p.pair.token1.symbol = 'ETH'
+                      if (p.pair.token1.symbol === 'WOETH') {
+                        p.pair.token1.symbol = 'OETH'
                       }
-                      if (p.pair.token0.symbol === 'WETH') {
-                        p.pair.token0.symbol = 'ETH'
+                      if (p.pair.token0.symbol === 'WOETH') {
+                        p.pair.token0.symbol = 'OETH'
                       }
                       return (
                         p.pair.id !== activePosition?.pair.id && (
