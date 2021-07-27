@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/info",
   "private": true,
-  "homepage": "https://info-dltswap.heroku.com",
+  "homepage": "https://info-dltswap.herokuapp.com",
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
     "@reach/portal": "^0.10.3",
