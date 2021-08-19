@@ -309,10 +309,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `http://scan.oasiseth.org/tx/${tx}/`,
-  showAddress: (address) => `https://scan.oasiseth.org/account/${address}/`,
-  showToken: (address) => `https://scan.oasiseth.org/account/${address}/`,
-  showBlock: (block) => `http://scan.oasiseth.org/block/${block}/`,
+  showTransaction: (tx) => `https://oasiseth-scan.pasco-tech.com/tx/${tx}`,
+  showAddress: (address) => `https://oasiseth-scan.pasco-tech.com/address/${address}/`,
+  showToken: (address) => `https://oasiseth-scan.pasco-tech.com/tokens/${address}/`,
+  showBlock: (block) => `https://oasiseth-scan.pasco-tech.com/blocks/${block}/`,
 }
 
 export const formatTime = (unix) => {
