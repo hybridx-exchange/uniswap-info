@@ -71,9 +71,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/dltswap/default-token-list/oeth/logo/${isAddress(
-    address
-  )}.png`
+  const path = `https://raw.githubusercontent.com/dltswap/default-token-list/oeth/logo/${isAddress(address)}.png`
 
   return (
     <Inline>

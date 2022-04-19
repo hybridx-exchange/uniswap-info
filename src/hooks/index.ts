@@ -8,9 +8,7 @@ import copy from 'copy-to-clipboard'
 export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
-    const path = `https://raw.githubusercontent.com/dltswap/default-token-list/oeth/logo/${isAddress(
-      tokenAddress
-    )}.png`
+    const path = `https://raw.githubusercontent.com/dltswap/default-token-list/oeth/logo/${isAddress(tokenAddress)}.png`
     if (path) {
       Vibrant.from(path).getPalette((err, palette) => {
         if (palette && palette.Vibrant) {

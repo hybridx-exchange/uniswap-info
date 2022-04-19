@@ -179,9 +179,10 @@ function TokenPage({ address, history }) {
             <TYPE.light style={{ textAlign: 'center' }}>
               {BLOCKED_WARNINGS[address] ?? `This token is not supported.`}
             </TYPE.light>
-            <Link external={true} href={'https://oasiseth-scan.pasco-tech.com/address/' + address}>{`More about ${shortenAddress(
-              address
-            )}`}</Link>
+            <Link
+              external={true}
+              href={'https://oasiseth-scan.pasco-tech.com/address/' + address}
+            >{`More about ${shortenAddress(address)}`}</Link>
           </AutoColumn>
         </BlockedMessageWrapper>
       </BlockedWrapper>
@@ -420,7 +421,11 @@ function TokenPage({ address, history }) {
                     </AutoRow>
                   </Column>
                   <ButtonLight color={backgroundColor}>
-                    <Link color={backgroundColor} external href={'https://oasiseth-scan.pasco-tech.com/address/' + address}>
+                    <Link
+                      color={backgroundColor}
+                      external
+                      href={'https://oasiseth-scan.pasco-tech.com/address/' + address}
+                    >
                       View on Etherscan ↗
                     </Link>
                   </ButtonLight>

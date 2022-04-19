@@ -12,9 +12,7 @@ export const timeframeOptions = {
 }
 
 // token list urls to fetch tokens from - use for warnings on tokens and pairs
-export const SUPPORTED_LIST_URLS__NO_ENS = [
-  'https://oasis-default-token-list.herokuapp.com'
-]
+export const SUPPORTED_LIST_URLS__NO_ENS = ['https://oasis-default-token-list.herokuapp.com']
 
 // hide from overview list
 export const TOKEN_BLACKLIST = [
